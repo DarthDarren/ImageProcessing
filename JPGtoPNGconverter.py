@@ -2,6 +2,7 @@ from PIL import Image, ImageFilter
 import os
 import sys
 
+#yet another new comment
 # grab first and 2nrd args
 fromDir = sys.argv[1] if len(sys.argv) > 1 else './Pokedex'
 toDir = sys.argv[2] if len(sys.argv) > 2 else './new'
