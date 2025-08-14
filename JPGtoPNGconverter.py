@@ -16,6 +16,7 @@ for filename in os.listdir(fromDir):
     if filename.endswith('.jpg') or filename.endswith('.jpeg'):
         img = Image.open(os.path.join(fromDir, filename))
         img = img.convert('RGB')  # Convert to RGB if not already
+        print(img.format)
+        print(img.mode)
         new_filename = os.path.splitext(filename)[0] + '.png'
         img.save(os.path.join(toDir, new_filename), 'PNG')
-        print(img.format)
