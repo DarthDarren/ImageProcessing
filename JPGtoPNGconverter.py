@@ -6,7 +6,7 @@ import sys
 fromDir = sys.argv[1] if len(sys.argv) > 1 else './Pokedex'
 toDir = sys.argv[2] if len(sys.argv) > 2 else './new'
 
-# check if new/ exists, if not create it
+# check if new/ exists, if not create itdasDASdas
 if not os.path.exists(toDir):
     os.makedirs(toDir)
 
