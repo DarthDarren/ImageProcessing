@@ -16,8 +16,7 @@ def pdf_watermarker(pdf_list):
     watermark_page = wtr_reader.getPage(0)
     print(f'Watermark page: {watermark_page}')
 
-    # Loop through each PDF file in the list
-    # and apply the watermark to each page
+    # Loop through each PDF file in the list and apply the watermark to each page
     for pdf_file in pdf_list:
         pdf = os.path.join(pdfDir, pdf_file)
         print(pdf)
