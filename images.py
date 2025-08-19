@@ -1,5 +1,6 @@
 from PIL import Image, ImageFilter
 
+# image processing example
 img = Image.open('./Pokedex/pikachu.jpg')
 filtered_img = img.filter(ImageFilter.SHARPEN)
 filtered_img = img.convert('L')  # Convert to grayscale
